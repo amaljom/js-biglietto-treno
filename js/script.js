@@ -5,21 +5,19 @@ console.log(userAge, userDistance);
 const pricePerKm= 0.21;
 let totalPrice= pricePerKm;
 console.log(totalPrice)
+totalPrice= totalPrice * userDistance;
 
 if( userAge < 18){
-    totalPrice= totalPrice * userDistance;
     const discount= ((totalPrice * 20) / 100);
     totalPrice=totalPrice-discount;
     
-} else if( userAge > 65){
-        totalPrice= totalPrice * userDistance;
+} 
+
+else if( userAge > 65){
         const discount= ((totalPrice * 40) / 100);
         totalPrice=totalPrice-discount;
         
-} else{
-        totalPrice= totalPrice * userDistance;
-        
-}
+} 
 
 // ? arrotndiamo a due cifre max dopo la virgola
 
