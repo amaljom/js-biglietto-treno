@@ -7,19 +7,19 @@ let totalPrice= pricePerKm;
 console.log(totalPrice)
 
 if( userAge < 18){
-    totalPrice= pricePerKm * userDistance;
+    totalPrice= totalPrice * userDistance;
     const discount= ((totalPrice * 20) / 100);
     totalPrice=totalPrice-discount;
-    console.log(totalPrice);
+    
 } else if( userAge > 65){
-        totalPrice= pricePerKm * userDistance;
+        totalPrice= totalPrice * userDistance;
         const discount= ((totalPrice * 40) / 100);
         totalPrice=totalPrice-discount;
-        console.log(totalPrice);
+        
 } else{
-        totalPrice= pricePerKm * userDistance;
-        console.log(totalPrice);
+        totalPrice= totalPrice * userDistance;
+        
 }
-
+console.log(totalPrice);
 
 document.getElementById('costo-biglietto').innerHTML = totalPrice;
